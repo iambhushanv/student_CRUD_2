@@ -127,5 +127,7 @@ export class StdOneComponent implements OnInit {
     this.snackBar.openSnackBar(`The student ${UPDATED_OBJ.fname} ${UPDATED_OBJ.lname} is updated successfully !!!`)
 
   }
-
+ trackByFun(index: number, std: Istudent){
+   return std.stdId
+ }
 }

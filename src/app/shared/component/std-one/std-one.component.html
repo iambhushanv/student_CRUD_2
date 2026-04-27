@@ -61,7 +61,7 @@
                     </thead>
 
                     <tbody>
-                        <tr *ngFor="let std of stdsArr; let i=index"
+                        <tr *ngFor="let std of stdsArr; let i=index; trackby : trackByFun"
                         [ngStyle]="{
                             'background-color': std.isActive ? 'lightgreen' : 'lightcoral'
                         }" >
